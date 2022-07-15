@@ -19,7 +19,7 @@
 
 <h2 id="sobre">💻 Sobre o projeto </h2
 
-GitFav- GitFav é uma página para adicionar usuários favoritos do github em uma tabela simples. Na página há uma barra de pesquisa onde o usuário poderá pesquisar o nome do user do github e adiciona-lo
+GitFav é uma página para adicionar usuários favoritos do github em uma tabela simples. Na página há uma barra de pesquisa onde o usuário poderá pesquisar o nome do user do github e adiciona-lo,podendo posteriormente excluir da lista ou acessar seu perfil clicanco no seu username.
 
 
 Projeto desenvolvido durante o Explorer da Rocketseat
