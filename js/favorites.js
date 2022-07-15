@@ -10,9 +10,9 @@ constructor(root)
   this.tbody = this.root.querySelector('table tbody')
   this.load()
   
-if(localStorage.length == 0){
-this.empty()
-}
+  if(this.entries.length == 0){
+    this.empty()
+  }
 
 
 }
@@ -25,7 +25,7 @@ load(){
 
 empty(){
   
-    
+   
   
     const noneUsers = document.createElement('tr')
   
@@ -52,7 +52,7 @@ empty(){
     noneUsers.classList.add('noneFav')
   
     this.tbody.append(noneUsers)
-  
+   
   
 }
   
@@ -128,7 +128,11 @@ super(root)
 this.update()
 this.onadd()
 
-this.empty()
+
+if(this.entries.length == 0){
+  this.empty()
+}
+
 
   }
 
@@ -176,9 +180,11 @@ const isOk = confirm('Tem certeza que deseja deletar esta linha?')
 
 if(isOk){
   this.delete(user)
-  console.log(this.entries)
+  
 }
-this.empty()
+if(this.entries.length == 0){
+  this.empty()
+}
 }
 
 this.tbody.append(row)
