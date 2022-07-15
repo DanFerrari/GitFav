@@ -3,4 +3,4 @@
 //classe que vai criar a visualização e eventos do HTML
 import { FavoritesView } from "./favorites.js";
 
-new FavoritesView('body')
+new FavoritesView('#page')
